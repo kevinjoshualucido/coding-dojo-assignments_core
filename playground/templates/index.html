@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment: Playground</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        background-color: white;
+      }
+
+      body {
+        border: 5px solid #000;
+        width: 1080px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 20px;
+      }
+
+      h1,
+      h3 {
+        text-align: center;
+        font-family: system-ui;
+      }
+
+      #boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px;
+      }
+
+      .box {
+        height: 160px;
+        width: 160px;
+        margin: 10px;
+        border: 3px solid darkgrey;
+        border-radius: 20px;
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <h1>Assignment: Playground</h1>
+      <h3>Boxes: {{ num_boxes }}</h3>
+      <h3>Color of Choice: {{ chosen_color }}</h3>
+    </div>
+
+    <div id="boxes">
+      {% for i in range(0,num_boxes) %}
+      <div class="box" style="background-color: {{ chosen_color }}"></div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
