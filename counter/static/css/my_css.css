@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+
+body {
+  margin: 0 auto;
+  padding: 20px;
+  width: 960px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+.bg-blue {
+  background-color: lightskyblue;
+}
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  background-color: lightgrey;
+}
+
+.pad {
+  padding: 10px;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.marg {
+  margin: 20px;
+}
+
+.marg-side {
+  margin: 20px;
+}
